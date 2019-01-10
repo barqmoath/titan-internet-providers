@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TitanPersonReportModelStoreContainer" CdmEntityContainer="TitanEntities">
+    <EntitySetMapping Name="TBL_PERSON">
+      <EntityTypeMapping TypeName="TitanPersonReportModel.TBL_PERSON">
+        <MappingFragment StoreEntitySet="TBL_PERSON">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+          <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+          <ScalarProperty Name="PONIT" ColumnName="PONIT" />
+          <ScalarProperty Name="SECTOR" ColumnName="SECTOR" />
+          <ScalarProperty Name="PHONE" ColumnName="PHONE" />
+          <ScalarProperty Name="HOME" ColumnName="HOME" />
+          <ScalarProperty Name="IP_ADDRESS" ColumnName="IP_ADDRESS" />
+          <ScalarProperty Name="MAC_ADRESS" ColumnName="MAC_ADRESS" />
+          <ScalarProperty Name="ISSTARUSER" ColumnName="ISSTARUSER" />
+          <ScalarProperty Name="IN_DATE" ColumnName="IN_DATE" />
+          <ScalarProperty Name="NOTS" ColumnName="NOTS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

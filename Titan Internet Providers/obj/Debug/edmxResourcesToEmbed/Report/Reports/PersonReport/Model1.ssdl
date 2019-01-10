@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Titan_INP_dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TBL_PERSON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FULLNAME" Type="varchar" MaxLength="50" />
+    <Property Name="USERNAME" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PASSWORD" Type="varchar" MaxLength="50" />
+    <Property Name="PONIT" Type="varchar" MaxLength="50" />
+    <Property Name="SECTOR" Type="varchar" MaxLength="50" />
+    <Property Name="PHONE" Type="varchar" MaxLength="50" />
+    <Property Name="HOME" Type="varchar" MaxLength="50" />
+    <Property Name="IP_ADDRESS" Type="varchar" MaxLength="50" />
+    <Property Name="MAC_ADRESS" Type="varchar" MaxLength="50" />
+    <Property Name="ISSTARUSER" Type="varchar" MaxLength="50" />
+    <Property Name="IN_DATE" Type="date" Nullable="false" />
+    <Property Name="NOTS" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityContainer Name="Titan_INP_dbModelStoreContainer">
+    <EntitySet Name="TBL_PERSON" EntityType="Self.TBL_PERSON" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

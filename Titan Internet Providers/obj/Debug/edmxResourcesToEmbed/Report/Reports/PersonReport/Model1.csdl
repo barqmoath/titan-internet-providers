@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Titan_INP_dbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TBL_PERSON">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FULLNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="USERNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PASSWORD" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PONIT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SECTOR" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PHONE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HOME" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IP_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MAC_ADRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ISSTARUSER" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IN_DATE" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NOTS" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="Titan_INP_dbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TBL_PERSON" EntityType="Self.TBL_PERSON" />
+  </EntityContainer>
+</Schema>
